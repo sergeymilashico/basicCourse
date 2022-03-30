@@ -11,4 +11,8 @@
     <PackageReference Include="System.Linq" Version="4.3.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Lesson5.LogicAndTypes\Lesson5_DT_Logic.csproj" />
+  </ItemGroup>
+
 </Project>
