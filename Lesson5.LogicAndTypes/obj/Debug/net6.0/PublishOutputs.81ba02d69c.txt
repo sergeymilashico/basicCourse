@@ -1,0 +1,5 @@
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson5.LogicAndTypes\bin\Debug\net6.0\publish\Lesson5_DT_Logic.exe
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson5.LogicAndTypes\bin\Debug\net6.0\publish\Lesson5_DT_Logic.dll
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson5.LogicAndTypes\bin\Debug\net6.0\publish\Lesson5_DT_Logic.deps.json
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson5.LogicAndTypes\bin\Debug\net6.0\publish\Lesson5_DT_Logic.runtimeconfig.json
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson5.LogicAndTypes\bin\Debug\net6.0\publish\Lesson5_DT_Logic.pdb
