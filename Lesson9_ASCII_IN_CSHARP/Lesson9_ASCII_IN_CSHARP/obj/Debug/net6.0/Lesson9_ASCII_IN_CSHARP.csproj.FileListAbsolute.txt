@@ -1,0 +1,15 @@
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson9_ASCII_IN_CSHARP\Lesson9_ASCII_IN_CSHARP\bin\Debug\net6.0\Lesson9_ASCII_IN_CSHARP.exe
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson9_ASCII_IN_CSHARP\Lesson9_ASCII_IN_CSHARP\bin\Debug\net6.0\Lesson9_ASCII_IN_CSHARP.deps.json
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson9_ASCII_IN_CSHARP\Lesson9_ASCII_IN_CSHARP\bin\Debug\net6.0\Lesson9_ASCII_IN_CSHARP.runtimeconfig.json
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson9_ASCII_IN_CSHARP\Lesson9_ASCII_IN_CSHARP\bin\Debug\net6.0\Lesson9_ASCII_IN_CSHARP.dll
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson9_ASCII_IN_CSHARP\Lesson9_ASCII_IN_CSHARP\bin\Debug\net6.0\Lesson9_ASCII_IN_CSHARP.pdb
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson9_ASCII_IN_CSHARP\Lesson9_ASCII_IN_CSHARP\obj\Debug\net6.0\Lesson9_ASCII_IN_CSHARP.csproj.AssemblyReference.cache
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson9_ASCII_IN_CSHARP\Lesson9_ASCII_IN_CSHARP\obj\Debug\net6.0\Lesson9_ASCII_IN_CSHARP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson9_ASCII_IN_CSHARP\Lesson9_ASCII_IN_CSHARP\obj\Debug\net6.0\Lesson9_ASCII_IN_CSHARP.AssemblyInfoInputs.cache
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson9_ASCII_IN_CSHARP\Lesson9_ASCII_IN_CSHARP\obj\Debug\net6.0\Lesson9_ASCII_IN_CSHARP.AssemblyInfo.cs
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson9_ASCII_IN_CSHARP\Lesson9_ASCII_IN_CSHARP\obj\Debug\net6.0\Lesson9_ASCII_IN_CSHARP.csproj.CoreCompileInputs.cache
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson9_ASCII_IN_CSHARP\Lesson9_ASCII_IN_CSHARP\obj\Debug\net6.0\Lesson9_ASCII_IN_CSHARP.dll
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson9_ASCII_IN_CSHARP\Lesson9_ASCII_IN_CSHARP\obj\Debug\net6.0\refint\Lesson9_ASCII_IN_CSHARP.dll
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson9_ASCII_IN_CSHARP\Lesson9_ASCII_IN_CSHARP\obj\Debug\net6.0\Lesson9_ASCII_IN_CSHARP.pdb
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson9_ASCII_IN_CSHARP\Lesson9_ASCII_IN_CSHARP\obj\Debug\net6.0\Lesson9_ASCII_IN_CSHARP.genruntimeconfig.cache
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson9_ASCII_IN_CSHARP\Lesson9_ASCII_IN_CSHARP\obj\Debug\net6.0\ref\Lesson9_ASCII_IN_CSHARP.dll

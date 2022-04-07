@@ -1,0 +1,15 @@
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson8_Practics\Lesson8_Practics\bin\Debug\net6.0\Lesson8_Practics.exe
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson8_Practics\Lesson8_Practics\bin\Debug\net6.0\Lesson8_Practics.deps.json
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson8_Practics\Lesson8_Practics\bin\Debug\net6.0\Lesson8_Practics.runtimeconfig.json
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson8_Practics\Lesson8_Practics\bin\Debug\net6.0\Lesson8_Practics.dll
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson8_Practics\Lesson8_Practics\bin\Debug\net6.0\Lesson8_Practics.pdb
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson8_Practics\Lesson8_Practics\obj\Debug\net6.0\Lesson8_Practics.csproj.AssemblyReference.cache
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson8_Practics\Lesson8_Practics\obj\Debug\net6.0\Lesson8_Practics.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson8_Practics\Lesson8_Practics\obj\Debug\net6.0\Lesson8_Practics.AssemblyInfoInputs.cache
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson8_Practics\Lesson8_Practics\obj\Debug\net6.0\Lesson8_Practics.AssemblyInfo.cs
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson8_Practics\Lesson8_Practics\obj\Debug\net6.0\Lesson8_Practics.csproj.CoreCompileInputs.cache
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson8_Practics\Lesson8_Practics\obj\Debug\net6.0\Lesson8_Practics.dll
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson8_Practics\Lesson8_Practics\obj\Debug\net6.0\refint\Lesson8_Practics.dll
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson8_Practics\Lesson8_Practics\obj\Debug\net6.0\Lesson8_Practics.pdb
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson8_Practics\Lesson8_Practics\obj\Debug\net6.0\Lesson8_Practics.genruntimeconfig.cache
+C:\Users\shish\OneDrive\Desktop\Войти в IT\BasicCourse\basicCourse\Lesson8_Practics\Lesson8_Practics\obj\Debug\net6.0\ref\Lesson8_Practics.dll
