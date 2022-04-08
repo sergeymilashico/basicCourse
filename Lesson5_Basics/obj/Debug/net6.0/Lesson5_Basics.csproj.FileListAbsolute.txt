@@ -1,0 +1,14 @@
+C:\Users\sergey_brin\OneDrive - Dell Technologies\Desktop\Войти в IT\basicCourse\Lesson5_Basics\bin\Debug\net6.0\Lesson5_Basics.exe
+C:\Users\sergey_brin\OneDrive - Dell Technologies\Desktop\Войти в IT\basicCourse\Lesson5_Basics\bin\Debug\net6.0\Lesson5_Basics.deps.json
+C:\Users\sergey_brin\OneDrive - Dell Technologies\Desktop\Войти в IT\basicCourse\Lesson5_Basics\bin\Debug\net6.0\Lesson5_Basics.runtimeconfig.json
+C:\Users\sergey_brin\OneDrive - Dell Technologies\Desktop\Войти в IT\basicCourse\Lesson5_Basics\bin\Debug\net6.0\Lesson5_Basics.dll
+C:\Users\sergey_brin\OneDrive - Dell Technologies\Desktop\Войти в IT\basicCourse\Lesson5_Basics\bin\Debug\net6.0\ref\Lesson5_Basics.dll
+C:\Users\sergey_brin\OneDrive - Dell Technologies\Desktop\Войти в IT\basicCourse\Lesson5_Basics\bin\Debug\net6.0\Lesson5_Basics.pdb
+C:\Users\sergey_brin\OneDrive - Dell Technologies\Desktop\Войти в IT\basicCourse\Lesson5_Basics\obj\Debug\net6.0\Lesson5_Basics.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sergey_brin\OneDrive - Dell Technologies\Desktop\Войти в IT\basicCourse\Lesson5_Basics\obj\Debug\net6.0\Lesson5_Basics.AssemblyInfoInputs.cache
+C:\Users\sergey_brin\OneDrive - Dell Technologies\Desktop\Войти в IT\basicCourse\Lesson5_Basics\obj\Debug\net6.0\Lesson5_Basics.AssemblyInfo.cs
+C:\Users\sergey_brin\OneDrive - Dell Technologies\Desktop\Войти в IT\basicCourse\Lesson5_Basics\obj\Debug\net6.0\Lesson5_Basics.csproj.CoreCompileInputs.cache
+C:\Users\sergey_brin\OneDrive - Dell Technologies\Desktop\Войти в IT\basicCourse\Lesson5_Basics\obj\Debug\net6.0\Lesson5_Basics.dll
+C:\Users\sergey_brin\OneDrive - Dell Technologies\Desktop\Войти в IT\basicCourse\Lesson5_Basics\obj\Debug\net6.0\ref\Lesson5_Basics.dll
+C:\Users\sergey_brin\OneDrive - Dell Technologies\Desktop\Войти в IT\basicCourse\Lesson5_Basics\obj\Debug\net6.0\Lesson5_Basics.pdb
+C:\Users\sergey_brin\OneDrive - Dell Technologies\Desktop\Войти в IT\basicCourse\Lesson5_Basics\obj\Debug\net6.0\Lesson5_Basics.genruntimeconfig.cache

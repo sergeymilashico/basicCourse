@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson5_Basics", "Lesson5_Basics\Lesson5_Basics.csproj", "{D83A0EE6-568D-4190-875D-EC8ACA0F0BDA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson6_Loops", "Lesson6_Loops\Lesson6_Loops.csproj", "{0110427A-9D09-4974-9503-FABC7BF34253}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson8_Shapes_Homework", "Lesson8_Shapes_Homework\Lesson8_Shapes_Homework.csproj", "{344D78FC-37C9-4067-A601-E869830E9DE9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson3_Website", "Lesson3_Website", "{74F0B1AC-ACE8-4BC0-8A84-DB3F6A3F2D5D}"
+	ProjectSection(SolutionItems) = preProject
+		Lesson3_WebSite\startbootstrap-freelancer-gh-pages.zip = Lesson3_WebSite\startbootstrap-freelancer-gh-pages.zip
+		Lesson3_WebSite\Войти в IT сайт.bmpr = Lesson3_WebSite\Войти в IT сайт.bmpr
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "website", "website", "{1B824754-857A-4841-B20B-EED579483E19}"
+	ProjectSection(SolutionItems) = preProject
+		Lesson3_WebSite\website\about.html = Lesson3_WebSite\website\about.html
+		Lesson3_WebSite\website\cart.html = Lesson3_WebSite\website\cart.html
+		Lesson3_WebSite\website\courses.html = Lesson3_WebSite\website\courses.html
+		Lesson3_WebSite\website\entry.html = Lesson3_WebSite\website\entry.html
+		Lesson3_WebSite\website\index.html = Lesson3_WebSite\website\index.html
+		Lesson3_WebSite\website\lesson.html = Lesson3_WebSite\website\lesson.html
+		Lesson3_WebSite\website\myCourses.html = Lesson3_WebSite\website\myCourses.html
+		Lesson3_WebSite\website\schedule.html = Lesson3_WebSite\website\schedule.html
+		Lesson3_WebSite\website\spa.html = Lesson3_WebSite\website\spa.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{AD78106C-FAA1-453A-B2B3-4FC9CE5CD1F2}"
+	ProjectSection(SolutionItems) = preProject
+		Lesson3_WebSite\website\js\scripts.js = Lesson3_WebSite\website\js\scripts.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{B04C5926-31F4-4A05-9649-6836EFCF12C0}"
+	ProjectSection(SolutionItems) = preProject
+		Lesson3_WebSite\website\css\site.css = Lesson3_WebSite\website\css\site.css
+		Lesson3_WebSite\website\css\styles.css = Lesson3_WebSite\website\css\styles.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{E7E1034C-CA93-4F53-818F-CFCA3425D65F}"
+	ProjectSection(SolutionItems) = preProject
+		Lesson3_WebSite\website\assets\favicon.ico = Lesson3_WebSite\website\assets\favicon.ico
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson7_ASCII_Art", "Lesson7_ASCII_Art\Lesson7_ASCII_Art.csproj", "{802793D5-BAF8-4B65-AA04-99A9D273DDB8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D83A0EE6-568D-4190-875D-EC8ACA0F0BDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D83A0EE6-568D-4190-875D-EC8ACA0F0BDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D83A0EE6-568D-4190-875D-EC8ACA0F0BDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D83A0EE6-568D-4190-875D-EC8ACA0F0BDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0110427A-9D09-4974-9503-FABC7BF34253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0110427A-9D09-4974-9503-FABC7BF34253}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0110427A-9D09-4974-9503-FABC7BF34253}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0110427A-9D09-4974-9503-FABC7BF34253}.Release|Any CPU.Build.0 = Release|Any CPU
+		{344D78FC-37C9-4067-A601-E869830E9DE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{344D78FC-37C9-4067-A601-E869830E9DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{344D78FC-37C9-4067-A601-E869830E9DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{344D78FC-37C9-4067-A601-E869830E9DE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{802793D5-BAF8-4B65-AA04-99A9D273DDB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{802793D5-BAF8-4B65-AA04-99A9D273DDB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{802793D5-BAF8-4B65-AA04-99A9D273DDB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{802793D5-BAF8-4B65-AA04-99A9D273DDB8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1B824754-857A-4841-B20B-EED579483E19} = {74F0B1AC-ACE8-4BC0-8A84-DB3F6A3F2D5D}
+		{AD78106C-FAA1-453A-B2B3-4FC9CE5CD1F2} = {1B824754-857A-4841-B20B-EED579483E19}
+		{B04C5926-31F4-4A05-9649-6836EFCF12C0} = {1B824754-857A-4841-B20B-EED579483E19}
+		{E7E1034C-CA93-4F53-818F-CFCA3425D65F} = {1B824754-857A-4841-B20B-EED579483E19}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98432E08-C3E0-4EA1-BE8C-392A5DC9EF9C}
+	EndGlobalSection
+EndGlobal
