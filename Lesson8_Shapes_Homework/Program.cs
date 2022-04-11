@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 
 namespace Lesson8_Shapes_Homework
 {
@@ -10,7 +11,6 @@ namespace Lesson8_Shapes_Homework
             Square[] squareArray = new Square[10];
             int i = 0;
             int j = 0;
-
 
             while (true)
             {
