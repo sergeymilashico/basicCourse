@@ -45,7 +45,11 @@ namespace Trainings.Web.Controllers
 
         public IActionResult Schedule()
         {
-            return View();
+            var viewModel = new LessonsViewModel();
+            var lessonService = new LessonService();
+            var lessons = lessonService.GetAllLessons();
+            viewModel.Lessons = lessons;
+            return View(viewModel);
         }
 
         public IActionResult About()

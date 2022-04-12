@@ -8,6 +8,10 @@
 
         public string CodeLink {get;set;}
 
+        public string PresentationLink { get; set; }
+
+        public string HomeworkLink { get; set; }
+
         public string Description { get; set; }
 
         public string Name { get; set; }

@@ -1,12 +1,11 @@
 ﻿@model LessonsViewModel
 
 @{
-    ViewData["Title"] = "Lessons";
+    ViewData["Title"] = "Список уроков";
 }
-<h1>@ViewData["Title"]</h1>
+<h2>@ViewData["Title"]</h2>
 
-<h4 class="text-uppercase mb-12">List of lessons</h4>
-<div class="row">
+<div class="row text-white">
 @foreach (Lesson lesson in @Model.Lessons)
     {
         <div class="col-lg-4">
