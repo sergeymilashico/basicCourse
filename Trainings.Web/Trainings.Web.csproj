@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\css\flags.css" />
     <Content Remove="wwwroot\css\site.css" />
   </ItemGroup>
 
@@ -18,9 +19,21 @@
     <None Include="wwwroot\assets\img\portfolio\game.png" />
     <None Include="wwwroot\assets\img\portfolio\safe.png" />
     <None Include="wwwroot\assets\img\portfolio\submarine.png" />
+    <None Include="wwwroot\css\flags.css" />
     <None Include="wwwroot\css\site.css" />
     <None Include="wwwroot\css\styles.css" />
     <None Include="wwwroot\js\scripts.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Program.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\ViewModels\" />
+    <Folder Include="Resources\Views\" />
   </ItemGroup>
 
 </Project>
