@@ -117,28 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="About" xml:space="preserve">
+  <data name="AboutUs" xml:space="preserve">
     <value>О Нас</value>
   </data>
-  <data name="CopyRight" xml:space="preserve">
-    <value>Онлайн IT Школа Милашико 2022</value>
+  <data name="Brief1" xml:space="preserve">
+    <value>Войти в IT Курсы были созданы с целью обучения с 0 программированию людей,
+                        которые не имели предварительного опыта в IT. Первый вводный курс стартовал 16 Марта 2022 и проходит в данный момент</value>
   </data>
-  <data name="Courses" xml:space="preserve">
+  <data name="Brief2" xml:space="preserve">
+    <value>По его завершению возможны новые углубленные курсы на русском и английском.
+                        В планах - оставить базовый курс в свободном доступе.</value>
+  </data>
+  <data name="OurCourses" xml:space="preserve">
     <value>Наши Курсы</value>
-  </data>
-  <data name="Home" xml:space="preserve">
-    <value>Домой</value>
-  </data>
-  <data name="Lessons" xml:space="preserve">
-    <value>Уроки</value>
-  </data>
-  <data name="Links" xml:space="preserve">
-    <value>Ссылки</value>
-  </data>
-  <data name="Program" xml:space="preserve">
-    <value>Программа</value>
-  </data>
-  <data name="SocialLinks" xml:space="preserve">
-    <value>Мы в Социальных Сетях</value>
   </data>
 </root>

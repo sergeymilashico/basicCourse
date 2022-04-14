@@ -8,7 +8,7 @@
 @inject IOptions<RequestLocalizationOptions> LocOptions
 
 @{
-    var requestCulture = Context.Features.Get<IRequestCultureFeature>().RequestCulture.Culture;
+    var requestCulture = Context.Features.Get<IRequestCultureFeature>();
     var cultureItems = LocOptions.Value.SupportedUICultures
         .Select(c => new SelectListItem { Value = c.Name, Text = c.TwoLetterISOLanguageName })
         .ToList();
@@ -26,17 +26,13 @@
     </select>*@
 
     <a class="nav-link py-3 px-0 px-lg-3 rounded dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        @requestCulture.TwoLetterISOLanguageName
+    Select Language
     </a>
-   
     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-        @for(var i = 0; i < cultureItems.Count; i++)
+        @foreach(var culture in cultureItems)
         {
-            if (@cultureItems[i].Value == requestCulture.Name) continue;
             <li>
-                <a class="dropdown-item" asp-controller="Home" asp-action="SetLanguage" asp-route-returnUrl="@returnUrl" asp-route-culture="@cultureItems[i].Value">
-                    @cultureItems[i].Text
-                </a>
+                <a class="dropdown-item" asp-controller="Home" asp-action="SetLanguage" asp-route-returnUrl="@returnUrl" asp-route-culture="@culture.Value">@culture.Text</a>
             </li>
         }
     </ul>   

@@ -1,11 +1,12 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@inject IViewLocalizer Localizer
 
 <section class="page-section portfolio" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase mb-0">Наши Курсы</h2>
+                <h2 class="page-section-heading text-center text-uppercase mb-0">@Localizer["OurCourses"]</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -23,24 +24,6 @@
                             <img class="img-fluid" src="assets/img/portfolio/basic_course.png" alt="Basic Course" />
                         </div>
                     </div>
-                    <!-- Portfolio Item 2-->
-                    @*<div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fa-3x">SPA</i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fa-3x">Data Science</i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/circus.png" alt="..." />
-                        </div>
-                    </div>*@
                 </div>
             </div>
         </section>
@@ -48,21 +31,20 @@
         <section class="page-section bg-primary mb-0" id="about">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase">О Нас</h2>
+                <h2 class="page-section-heading text-center text-uppercase">@Localizer["AboutUs"]</h2>
                 <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
+                <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Войти в IT Курсы были созданы с целью обучения с 0 программированию людей,
-                        которые не имели предварительного опыта в IT. Первый вводный курс стартовал 16 Марта 2022 и проходит в данный момент
+                    <div class="col-lg-4 ms-auto"><p class="lead">
+                        @Localizer["Brief1"]
                     </p></div>
                     <div class="col-lg-4 me-auto"><p class="lead">
-                        По его завершению возможны новые углубленные курсы на русском и английском.
-                        В планах - оставить базовый курс в свободном доступе.
+                        @Localizer["Brief2"]
                     </p></div>
                 </div>
             </div>

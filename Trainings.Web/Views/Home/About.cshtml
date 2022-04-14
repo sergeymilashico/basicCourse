@@ -1,14 +1,10 @@
 ﻿@*@{
     ViewData["Title"] = "Online IT School Milashico";
 }*@
-<h2 class="text-uppercase mb-12">@ViewData["Title"]</h2>
+@inject IViewLocalizer Localizer
+
+<h2 class="text-uppercase mb-12">@Localizer["AboutUs"]</h2>
 
 <p>
-    Online IT School Milashico has been established in 2022.With purpose to help learn IT speciality to those,
-    who had minimal previous experience in the field. 
-
-</p>
-<p>
-    Many Ukrainians fleed their homes in 2022 so original entry course
-    has been made in Russian and was mainlyfocused on Ukrainian refugees and still in progress. Other courses to follow.
+     @Localizer["Description"]
 </p>
