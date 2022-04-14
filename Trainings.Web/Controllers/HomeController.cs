@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Localization;
 using System.Diagnostics;
 using Trainings.Web.Models;
 using Trainings.Web.Services;
@@ -9,9 +10,12 @@ namespace Trainings.Web.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IStringLocalizer<HomeController> _stringLocalizer;
+
+        public HomeController(ILogger<HomeController> logger, IStringLocalizer<HomeController> stringLocalizer)
         {
             _logger = logger;
+            _stringLocalizer = stringLocalizer;
         }
 
         public IActionResult Index()
@@ -54,6 +58,8 @@ namespace Trainings.Web.Controllers
 
         public IActionResult About()
         {
+            string message = _stringLocalizer["AboutUs"].Value;
+            ViewData["Title"] = message;
             return View();
         }
 
