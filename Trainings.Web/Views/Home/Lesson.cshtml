@@ -3,7 +3,7 @@
 <div class="row">  
     <div class="col-lg-12">
         <div>
-            <div class=" container d-flex justify-content-center">
+            <div class="container d-flex justify-content-center">
                 <ul class="pagination shadow-lg">
                     @foreach(Lesson lesson in @Model.Lessons)
                     {
@@ -14,45 +14,38 @@
                     }
                 </ul>
         </div>
-</div>
-            
+</div>          
 
 <div class="row">  
-    <div class="col-lg-12 justify-content-center">
-            <div class="justify-content-center">
-                <h5 class="card-title">Урок @Model.Current.Id. @Model.Current.Name</h5>
-                <p class="card-text">
-                    <h6>@Model.Current.Description</h6>
-                </p>
+    <div class="col-lg-12">
+        <div class="container d-flex justify-content-center">
+            <h5 class="card-title">Урок @Model.Current.Id. @Model.Current.Description</h5>
+        </div>
+    </div>
+</div>
 
-                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                        <li class="nav-item">
-                        <a class="nav-link active" id="pills-video-tab" data-toggle="pill" href="#pills-video" role="tab" aria-controls="pills-video" aria-selected="true">Video</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" id="pills-homework-tab" data-toggle="pill" href="#pills-homework" role="tab" aria-controls="pills-homework" aria-selected="false">Homework</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" id="pills-presentation-tab" data-toggle="pill" href="#pills-presentation" role="tab" aria-controls="pills-presentation" aria-selected="false">Presentation</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" id="pills-code-tab" data-toggle="pill" href="#pills-code" role="tab" aria-controls="pills-code" aria-selected="false">Code</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" id="pills-readings-tab" data-toggle="pill" href="#pills-readings" role="tab" aria-controls="pills-readings" aria-selected="false">Readings</a>
-                        </li>
-                </ul>
-            </div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="container">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                    <a class="nav-link" id="pills-homework-tab" data-toggle="pill" href="#pills-homework" role="tab" aria-controls="pills-homework" aria-selected="false">Homework</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" id="pills-presentation-tab" data-toggle="pill" href="#pills-presentation" role="tab" aria-controls="pills-presentation" aria-selected="false">Presentation</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" id="pills-code-tab" data-toggle="pill" href="#pills-code" role="tab" aria-controls="pills-code" aria-selected="false">Code</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" id="pills-readings-tab" data-toggle="pill" href="#pills-readings" role="tab" aria-controls="pills-readings" aria-selected="false">Readings</a>
+                    </li>
+            </ul>
             
 
             <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade  show active" id="pills-video" role="tabpanel" aria-labelledby="pills-video-tab">
-                    <iframe width="720" height="480" src="@Model.Current.VideoLink" 
-                    title="YouTube video player" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                    </iframe>
-                </div>
-                <div class="tab-pane fade" id="pills-homework" role="tabpanel" aria-labelledby="pills-homework-tab">
+                
+                <div class="tab-pane fade show active" id="pills-homework" role="tabpanel" aria-labelledby="pills-homework-tab">
                     <a href="@Model.Current.HomeworkLink">@Model.Current.HomeworkLink</a>                       
                 </div>
                 <div class="tab-pane fade" id="pills-presentation" role="tabpanel" aria-labelledby="pills-presentation-tab">
@@ -63,5 +56,20 @@
                 </div>
                 <div class="tab-pane fade" id="pills-readings" role="tabpanel" aria-labelledby="pills-readings-tab">Readings</div>
             </div>
+        <div class="container d-flex justify-content-center">
     </div>
 </div>
+
+<div class="row">  
+    <div class="col-lg-12 ratio ratio-4x3">
+        <div class="container d-flex justify-content-center">
+            <div class="embed-responsive embed-responsive-4by3 ratio ratio-4x3">
+                <iframe class="embed-responsive-item" src="@Model.Current.VideoLink" frameborder="0" allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" >
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+

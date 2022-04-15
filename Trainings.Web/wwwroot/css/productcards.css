@@ -38,9 +38,9 @@
 .column:hover .card .txt {
   margin-left: 1rem;
 }
-.column:hover .card .txt h1, .column:hover .card .txt p {
-  color: white;
-  opacity: 1;
+.column:hover .card .txt h2, .txt h3, .column:hover .card .txt p {
+    color: white;
+    opacity: 1;
 }
 .column:hover a {
   color: white;
@@ -65,22 +65,28 @@
   margin-left: -3rem;
   z-index: 1;
 }
-.card .txt h1 {
+.card .txt h2 {
   font-size: 1.5rem;
   font-weight: 300;
   text-transform: uppercase;
 }
-.card .txt p {
-  font-size: 0.7rem;
-  font-family: "Open Sans", sans-serif;
-  letter-spacing: 0rem;
-  margin-top: 33px;
-  opacity: 0;
-  color: white;
+.card .txt h3 {
+    font-size: 1.0rem;
+    font-weight: 300;
+    text-transform: uppercase;
 }
+    .card .txt p {
+        font-size: 1.0rem;
+        font-family: "Open Sans", sans-serif;
+        letter-spacing: 0rem;
+        margin-top: 33px;
+        opacity: 0;
+        color: white;
+        text-transform: uppercase;
+    }
 .card a {
   z-index: 3;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   color: black;
   margin-left: 1rem;
   position: relative;
