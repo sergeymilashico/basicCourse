@@ -55,28 +55,56 @@
                     <div class="tab-pane fade shadow rounded bg-white show active p-5" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                         <h4 class="font-italic mb-4">Homework</h4>
                         <p class="font-italic text-muted mb-2">
-                            <a href="@Model.Current.HomeworkLink">@Model.Current.HomeworkLink</a>
-                        </p>
+                            @if (@Model.Current.HomeworkLink != null)
+                            {
+                                <a href="@Model.Current.HomeworkLink" class="btn btn-primary">Open</a>
+                            }
+                            else
+                            {
+                                <img src="~/assets/img/under development.png" />
+                            }
+                            </p>
                     </div>
                     
                     <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                         <h4 class="font-italic mb-4">Presentation</h4>
                         <p class="font-italic text-muted mb-2">
-                            <a href="@Model.Current.PresentationLink">@Model.Current.PresentationLink</a>
+                            @if (@Model.Current.PresentationLink != null)
+                            {
+                                <a href="@Model.Current.PresentationLink" class="btn btn-primary">Open</a>
+                            }
+                            else
+                            {
+                                <img src="~/assets/img/under development.png" />
+                            }
                         </p>
                     </div>
                     
                     <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
                         <h4 class="font-italic mb-4">Code</h4>
                         <p class="font-italic text-muted mb-2">
-                            <a href="@Model.Current.CodeLink">@Model.Current.CodeLink</a>
+                            @if (@Model.Current.CodeLink != null)
+                            {
+                                <a href="@Model.Current.CodeLink" class="btn btn-primary">Open</a>
+                            }
+                            else
+                            {
+                                <img src="~/assets/img/under development.png" />
+                            }
                         </p>    
                     </div>
                     
                     <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
                         <h4 class="font-italic mb-4">Readings</h4>
                         <p class="font-italic text-muted mb-2">
-                            Readings
+                            @if (@Model.Current.ReadingsLink != null)
+                            {
+                                <a href="@Model.Current.ReadingsLink" class="btn btn-primary">Open</a>
+                            }
+                            else
+                            {
+                                <img src="~/assets/img/under development.png" />
+                            }
                         </p>  
                     </div>
                 </div>

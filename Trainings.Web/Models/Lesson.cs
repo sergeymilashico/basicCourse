@@ -12,6 +12,8 @@
 
         public string HomeworkLink { get; set; }
 
+        public string ReadingsLink { get; set; }
+
         public string Description { get; set; }
 
         public string Name { get; set; }
