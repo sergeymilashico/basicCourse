@@ -1,7 +1,8 @@
 ﻿@model LessonViewModel
 
-<div class="row">  
-    <div class="col-lg-12">
+<div class="container">
+    <div class="row">  
+    <div class="col-lg-12 col-sm-12 col-md-12">
         <div>
             <div class="container d-flex justify-content-center">
                 <ul class="pagination shadow-lg">
@@ -17,51 +18,73 @@
 </div>          
 
 <div class="row">  
-    <div class="col-lg-12">
+    <div class="col-lg-12 col-sm-12 col-md-12">
         <div class="container d-flex justify-content-center">
             <h5 class="card-title">Урок @Model.Current.Id. @Model.Current.Description</h5>
         </div>
     </div>
 </div>
 
-<div class="row">
-    <div class="col-lg-12">
-        <div class="container">
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                    <li class="nav-item">
-                    <a class="nav-link" id="pills-homework-tab" data-toggle="pill" href="#pills-homework" role="tab" aria-controls="pills-homework" aria-selected="false">Homework</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" id="pills-presentation-tab" data-toggle="pill" href="#pills-presentation" role="tab" aria-controls="pills-presentation" aria-selected="false">Presentation</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" id="pills-code-tab" data-toggle="pill" href="#pills-code" role="tab" aria-controls="pills-code" aria-selected="false">Code</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" id="pills-readings-tab" data-toggle="pill" href="#pills-readings" role="tab" aria-controls="pills-readings" aria-selected="false">Readings</a>
-                    </li>
-            </ul>
-            
 
-            <div class="tab-content" id="pills-tabContent">
-                
-                <div class="tab-pane fade show active" id="pills-homework" role="tabpanel" aria-labelledby="pills-homework-tab">
-                    <a href="@Model.Current.HomeworkLink">@Model.Current.HomeworkLink</a>                       
-                </div>
-                <div class="tab-pane fade" id="pills-presentation" role="tabpanel" aria-labelledby="pills-presentation-tab">
-                    <a href="@Model.Current.PresentationLink">@Model.Current.PresentationLink</a>      
-                </div>
-                <div class="tab-pane fade" id="pills-code" role="tabpanel" aria-labelledby="pills-code-tab">
-                    <a href="@Model.Current.CodeLink">@Model.Current.CodeLink</a>                       
-                </div>
-                <div class="tab-pane fade" id="pills-readings" role="tabpanel" aria-labelledby="pills-readings-tab">Readings</div>
+<div class="row">
+            <div class="col-md-3">
+                <!-- Tabs nav -->
+                <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link mb-3 p-3 shadow active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                        <i class="fa fa-house-user mr-2"></i>
+                        <span class="font-weight-bold small text-uppercase">Homework</span></a>
+
+                    <a class="nav-link mb-3 p-3 shadow" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                        <i class="fa fa-file-powerpoint mr-2"></i>
+                        <span class="font-weight-bold small text-uppercase">Presentation</span></a>
+
+                    <a class="nav-link mb-3 p-3 shadow" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                        <i class="fa fa-laptop-code mr-2"></i>
+                        <span class="font-weight-bold small text-uppercase">Code</span></a>
+
+                    <a class="nav-link mb-3 p-3 shadow" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                        <i class="fa fa-book mr-2"></i>
+                        <span class="font-weight-bold small text-uppercase">Readings</span></a>
+                    </div>
             </div>
-        <div class="container d-flex justify-content-center">
-    </div>
+
+
+            <div class="col-md-9">
+                <!-- Tabs content -->
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade shadow rounded bg-white show active p-5" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <h4 class="font-italic mb-4">Homework</h4>
+                        <p class="font-italic text-muted mb-2">
+                            <a href="@Model.Current.HomeworkLink">@Model.Current.HomeworkLink</a>
+                        </p>
+                    </div>
+                    
+                    <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                        <h4 class="font-italic mb-4">Presentation</h4>
+                        <p class="font-italic text-muted mb-2">
+                            <a href="@Model.Current.PresentationLink">@Model.Current.PresentationLink</a>
+                        </p>
+                    </div>
+                    
+                    <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                        <h4 class="font-italic mb-4">Code</h4>
+                        <p class="font-italic text-muted mb-2">
+                            <a href="@Model.Current.CodeLink">@Model.Current.CodeLink</a>
+                        </p>    
+                    </div>
+                    
+                    <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                        <h4 class="font-italic mb-4">Readings</h4>
+                        <p class="font-italic text-muted mb-2">
+                            Readings
+                        </p>  
+                    </div>
+                </div>
+            </div>
 </div>
 
 <div class="row">  
-    <div class="col-lg-12 ratio ratio-4x3">
+    <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12 ratio ratio-4x3">
         <div class="container d-flex justify-content-center">
             <div class="embed-responsive embed-responsive-4by3 ratio ratio-4x3">
                 <iframe class="embed-responsive-item" src="@Model.Current.VideoLink" frameborder="0" allowfullscreen
@@ -71,5 +94,7 @@
         </div>
     </div>
 </div>
+</div>
+
 
 

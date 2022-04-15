@@ -7,25 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="wwwroot\css\breadcrumb.css" />
-    <Content Remove="wwwroot\css\flags.css" />
     <Content Remove="wwwroot\css\productcards.scss" />
-    <Content Remove="wwwroot\css\site.css" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="wwwroot\assets\img\avataaars.svg" />
-    <None Include="wwwroot\assets\img\portfolio\cabin.png" />
-    <None Include="wwwroot\assets\img\portfolio\cake.png" />
-    <None Include="wwwroot\assets\img\portfolio\circus.png" />
-    <None Include="wwwroot\assets\img\portfolio\game.png" />
-    <None Include="wwwroot\assets\img\portfolio\safe.png" />
-    <None Include="wwwroot\assets\img\portfolio\submarine.png" />
-    <None Include="wwwroot\css\flags.css" />
     <None Include="wwwroot\css\productcards.scss" />
-    <None Include="wwwroot\css\breadcrumb.css" />
-    <None Include="wwwroot\css\site.css" />
-    <None Include="wwwroot\css\styles.css" />
     <None Include="wwwroot\js\scripts.js" />
   </ItemGroup>
 
@@ -37,6 +24,12 @@
 
   <ItemGroup>
     <Folder Include="Resources\ViewModels\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\css\productcards.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
