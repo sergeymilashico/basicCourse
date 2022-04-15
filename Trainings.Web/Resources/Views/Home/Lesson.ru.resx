@@ -117,24 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AboutUs" xml:space="preserve">
-    <value>О Нас</value>
+  <data name="Code" xml:space="preserve">
+    <value>Код</value>
   </data>
-  <data name="Brief1" xml:space="preserve">
-    <value>Войти в IT Курсы были созданы с целью обучения с 0 программированию людей,
-                        которые не имели предварительного опыта в IT. Первый вводный курс стартовал 16 Марта 2022 и проходит в данный момент</value>
+  <data name="Homework" xml:space="preserve">
+    <value>Домашнее Задание</value>
   </data>
-  <data name="Brief2" xml:space="preserve">
-    <value>По его завершению возможны новые углубленные курсы на русском и английском.
-                        В планах - оставить базовый курс в свободном доступе.</value>
+  <data name="Lesson" xml:space="preserve">
+    <value>Урок</value>
   </data>
-  <data name="Details" xml:space="preserve">
-    <value>Подробнее</value>
+  <data name="Open" xml:space="preserve">
+    <value>Открыть</value>
   </data>
-  <data name="Join" xml:space="preserve">
-    <value>Записаться</value>
+  <data name="Presentation" xml:space="preserve">
+    <value>Презентация</value>
   </data>
-  <data name="OurCourses" xml:space="preserve">
-    <value>Наши Курсы</value>
+  <data name="Readings" xml:space="preserve">
+    <value>Чтиво</value>
   </data>
 </root>

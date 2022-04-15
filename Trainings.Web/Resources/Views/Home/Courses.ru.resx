@@ -117,24 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AboutUs" xml:space="preserve">
-    <value>О Нас</value>
-  </data>
-  <data name="Brief1" xml:space="preserve">
-    <value>Войти в IT Курсы были созданы с целью обучения с 0 программированию людей,
-                        которые не имели предварительного опыта в IT. Первый вводный курс стартовал 16 Марта 2022 и проходит в данный момент</value>
-  </data>
-  <data name="Brief2" xml:space="preserve">
-    <value>По его завершению возможны новые углубленные курсы на русском и английском.
-                        В планах - оставить базовый курс в свободном доступе.</value>
-  </data>
-  <data name="Details" xml:space="preserve">
-    <value>Подробнее</value>
-  </data>
-  <data name="Join" xml:space="preserve">
-    <value>Записаться</value>
-  </data>
   <data name="OurCourses" xml:space="preserve">
-    <value>Наши Курсы</value>
+    <value>Наши курсы</value>
   </data>
 </root>

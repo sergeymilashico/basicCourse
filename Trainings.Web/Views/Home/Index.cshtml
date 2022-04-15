@@ -1,90 +1,42 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿
 @inject IViewLocalizer Localizer
 
 <section class="page-section portfolio" id="portfolio">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase mb-0">@Localizer["OurCourses"]</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                
-                <div class="row text-white">
-                    <div class="col-md-12 col-lg-12 column">
-                        <div class="card gr-2">
-                            <div class="txt">
-                                <h2>Войти в IT. Базовый</h2>
-                                <p>Курс для всех, даже совсем новичков. Попробуйте абсолютно <b>БЕСПЛАТНО</b></p>
-                            </div>
-                        <a asp-area="" asp-controller="Home" asp-action="Schedule" >Посмотреть программу</a>
-                        <a asp-area="" asp-controller="Cart" asp-action="Subscribe" >Записаться</a>
-                        </div>
+    <div class="container">
+        <!-- Portfolio Section Heading-->
+        <h1 class="page-section-heading text-center text-uppercase mb-0">@Localizer["OurCourses"]</h1>
+        <hr class="shine">        
+        <div class="row text-white">
+            <div class="col-md-12 col-lg-12 column">
+                <div class="card gr-2">
+                    <div class="txt">
+                        <h2>Войти в IT. Базовый</h2>
+                        <p>Курс для всех, даже совсем новичков. Попробуйте абсолютно <b>БЕСПЛАТНО</b></p>
                     </div>
-                </div>
-
-            </div>
-        </section>
-        <!-- About Section-->
-        <section class="page-section bg-primary mb-0" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase">@Localizer["AboutUs"]</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">
-                        @Localizer["Brief1"]
-                    </p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">
-                        @Localizer["Brief2"]
-                    </p></div>
-                </div>
-            </div>
-        </section>
-
-
-                <!-- Portfolio Modals-->
-        <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Вводный курс</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/basic_course.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Введение в специальность. Создание Asp.NET Core сайта с 0, Изучение языка C#, Практика по языку C#,
-                                        Unit Testing, Введение в базы данных, Групповые курсовые работы</p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i></i>
-                                        <a class="nav-link py-1 px-0 px-lg-2 rounded" asp-area="" asp-controller="Home" asp-action="Schedule">Детальная Информация</a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <a asp-area="" asp-controller="Home" asp-action="Schedule" >@Localizer["Details"]</a>
+                <a asp-area="" asp-controller="Cart" asp-action="Subscribe" >@Localizer["Join"]</a>
                 </div>
             </div>
         </div>
+</div>
+</section>
+
+<!-- About Section-->
+<section class="page-section bg-primary mb-0" id="about">
+    <div class="container">
+        <!-- About Section Heading-->
+        <h1 class="page-section-heading text-center text-uppercase">@Localizer["AboutUs"]</h1>
+        
+        <hr class="shine">
+
+        <!-- About Section Content-->
+        <div class="row">
+            <div class="col-lg-4 ms-auto"><p class="lead">
+                @Localizer["Brief1"]
+            </p></div>
+            <div class="col-lg-4 me-auto"><p class="lead">
+                @Localizer["Brief2"]
+            </p></div>
         </div>
+    </div>
+</section>

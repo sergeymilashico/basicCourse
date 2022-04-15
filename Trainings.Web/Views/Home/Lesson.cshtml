@@ -1,4 +1,10 @@
-﻿@model LessonViewModel
+﻿@inject IViewLocalizer Localizer
+@model LessonViewModel
+
+<h1 class="page-section-heading text-center text-uppercase mb-0">@Localizer["Lesson"] @Model.Current.Id. <br/>
+    @Model.Current.Description
+</h1>
+<hr class="shine">
 
 <div class="container">
     <div class="row">  
@@ -10,21 +16,12 @@
                     {
                         <li class="page-item"><a class="page-link" asp-area="" asp-controller="Home" asp-action="Lesson" asp-route-id="@lesson.Id">
                         <i class="fa fa-file mr-1"></i>
-                        <small>Урок @lesson.Id</small>
+                        <small>@lesson.Id</small>
                     </a></li>
                     }
                 </ul>
         </div>
 </div>          
-
-<div class="row">  
-    <div class="col-lg-12 col-sm-12 col-md-12">
-        <div class="container d-flex justify-content-center">
-            <h5 class="card-title">Урок @Model.Current.Id. @Model.Current.Description</h5>
-        </div>
-    </div>
-</div>
-
 
 <div class="row">
             <div class="col-md-3">
@@ -32,19 +29,19 @@
                 <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <a class="nav-link mb-3 p-3 shadow active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
                         <i class="fa fa-house-user mr-2"></i>
-                        <span class="font-weight-bold small text-uppercase">Homework</span></a>
+                        <span class="font-weight-bold small text-uppercase">@Localizer["Homework"]</span></a>
 
                     <a class="nav-link mb-3 p-3 shadow" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
                         <i class="fa fa-file-powerpoint mr-2"></i>
-                        <span class="font-weight-bold small text-uppercase">Presentation</span></a>
+                        <span class="font-weight-bold small text-uppercase">@Localizer["Presentation"]</span></a>
 
                     <a class="nav-link mb-3 p-3 shadow" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
                         <i class="fa fa-laptop-code mr-2"></i>
-                        <span class="font-weight-bold small text-uppercase">Code</span></a>
+                        <span class="font-weight-bold small text-uppercase">@Localizer["Code"]</span></a>
 
                     <a class="nav-link mb-3 p-3 shadow" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
                         <i class="fa fa-book mr-2"></i>
-                        <span class="font-weight-bold small text-uppercase">Readings</span></a>
+                        <span class="font-weight-bold small text-uppercase">@Localizer["Readings"]</span></a>
                     </div>
             </div>
 
@@ -53,11 +50,11 @@
                 <!-- Tabs content -->
                 <div class="tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade shadow rounded bg-white show active p-5" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                        <h4 class="font-italic mb-4">Homework</h4>
+                        <h4 class="font-italic mb-4">@Localizer["Homework"]</h4>
                         <p class="font-italic text-muted mb-2">
                             @if (@Model.Current.HomeworkLink != null)
                             {
-                                <a href="@Model.Current.HomeworkLink" class="btn btn-primary">Open</a>
+                                <a href="@Model.Current.HomeworkLink" class="btn btn-primary">@Localizer["Open"]</a>
                             }
                             else
                             {
@@ -67,11 +64,11 @@
                     </div>
                     
                     <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                        <h4 class="font-italic mb-4">Presentation</h4>
+                        <h4 class="font-italic mb-4">@Localizer["Presentation"]</h4>
                         <p class="font-italic text-muted mb-2">
                             @if (@Model.Current.PresentationLink != null)
                             {
-                                <a href="@Model.Current.PresentationLink" class="btn btn-primary">Open</a>
+                                <a href="@Model.Current.PresentationLink" class="btn btn-primary">@Localizer["Open"]</a>
                             }
                             else
                             {
@@ -81,11 +78,11 @@
                     </div>
                     
                     <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                        <h4 class="font-italic mb-4">Code</h4>
+                        <h4 class="font-italic mb-4">@Localizer["Code"]</h4>
                         <p class="font-italic text-muted mb-2">
                             @if (@Model.Current.CodeLink != null)
                             {
-                                <a href="@Model.Current.CodeLink" class="btn btn-primary">Open</a>
+                                <a href="@Model.Current.CodeLink" class="btn btn-primary">@Localizer["Open"]</a>
                             }
                             else
                             {
@@ -95,11 +92,11 @@
                     </div>
                     
                     <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                        <h4 class="font-italic mb-4">Readings</h4>
+                        <h4 class="font-italic mb-4">@Localizer["Readings"]</h4>
                         <p class="font-italic text-muted mb-2">
                             @if (@Model.Current.ReadingsLink != null)
                             {
-                                <a href="@Model.Current.ReadingsLink" class="btn btn-primary">Open</a>
+                                <a href="@Model.Current.ReadingsLink" class="btn btn-primary">@Localizer["Open"]</a>
                             }
                             else
                             {

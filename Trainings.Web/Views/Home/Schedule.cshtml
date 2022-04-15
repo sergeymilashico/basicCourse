@@ -1,9 +1,8 @@
-﻿@model LessonsViewModel
+﻿@inject IViewLocalizer Localizer
+@model LessonsViewModel
 
-@{
-    ViewData["Title"] = "Войти в IT. Вводный курс";
-}
-<h1 class="text-uppercase mb-12">@ViewData["Title"]</h1>
+<h1 class="page-section-heading text-center text-uppercase mb-0">@Localizer["Schedule"]</h1>
+<hr class="shine"> 
 
 <div class="row">
 @foreach (Lesson lesson in @Model.Lessons)
@@ -11,8 +10,8 @@
         <div class="col-lg-12">
             <ul>
                 <div>
-                    <a asp-area="" asp-controller="Home" asp-action="Lesson" asp-route-id="@lesson.Id" class="btn btn-primary">Просмотреть урок</a>&nbsp;&nbsp;
-                    Урок @lesson.Id. @lesson.Name
+                    <a asp-area="" asp-controller="Home" asp-action="Lesson" asp-route-id="@lesson.Id" class="btn btn-primary">@Localizer["Watch"]</a>&nbsp;&nbsp;
+                    @Localizer["Lesson"] @lesson.Id. @lesson.Name
                 </div>
             </ul>
         </div>
