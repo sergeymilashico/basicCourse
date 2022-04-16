@@ -24,7 +24,7 @@
 </div>          
 
 <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3" id="tabsContainer">
                 <!-- Tabs nav -->
                 <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <a class="nav-link mb-3 p-3 shadow active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
@@ -120,6 +120,21 @@
     </div>
 </div>
 </div>
+
+<script type="text/javascript">
+    $(function() {
+        alert($('div').html());
+    });
+</script>
+
+<script type="text/javascript">
+$(function()
+{
+alert("in documet ready");  
+    var x = jQuery("#tabsContainer").children();
+  alert(x);
+});
+</script>
 
 
 
