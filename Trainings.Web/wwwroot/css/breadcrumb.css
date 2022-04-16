@@ -52,7 +52,7 @@ a:active {
 
 .pagination li a.page-link:after {
     content: '';
-    background-color: #42A5F5 !important;
+    background-color: #45b649 !important;
     height: 100%;
     width: 100%;
     transform: scaleY(0);
@@ -67,7 +67,7 @@ a:active {
 .pagination li a.page-link:hover:after,
 .pagination li.active a.page-link:hover:after {
     transform: scaleY(1);
-    border-radius: 25px !important
+    border-radius: 8px !important
 }
 
 @media (max-width: 767px) {
