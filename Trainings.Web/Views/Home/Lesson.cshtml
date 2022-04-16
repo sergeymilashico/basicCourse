@@ -14,11 +14,25 @@
                 <ul class="pagination shadow-lg">
                     @foreach(Lesson lesson in @Model.Lessons)
                     {
-                        <li class="page-item"><a class="page-link" asp-area="" asp-controller="Home" asp-action="Lesson" asp-route-id="@lesson.Id">
-                        <i class="fa fa-file mr-1"></i>
-                        <small>@lesson.Id</small>
-                    </a></li>
-                    }
+                        if(@lesson.Id != @Model.Current.Id)
+                        {
+                            <li class="page-item">
+                                <a class="page-link" asp-area="" asp-controller="Home" asp-action="Lesson" asp-route-id="@lesson.Id">
+                                    <i class="fa fa-file mr-1"></i>
+                                    <small>@lesson.Id</small>
+                                </a>
+                                </li>
+                            }
+                            else
+                            {
+                                <li class="page-item active">
+                                <a class="page-link" asp-area="" asp-controller="Home" asp-action="Lesson" asp-route-id="@lesson.Id">
+                                    <i class="fa fa-file mr-1"></i>
+                                    <small>@lesson.Id</small>
+                                </a>
+                                </li>
+                            }    
+                        }
                 </ul>
         </div>
 </div>          
@@ -112,6 +126,7 @@
     <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12 ratio ratio-4x3">
         <div class="container d-flex justify-content-center">
             <div class="embed-responsive embed-responsive-4by3 ratio ratio-4x3">
+                <br />
                 <iframe class="embed-responsive-item" src="@Model.Current.VideoLink" frameborder="0" allowfullscreen
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" >
                 </iframe>
