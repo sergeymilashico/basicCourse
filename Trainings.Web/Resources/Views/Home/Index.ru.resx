@@ -128,6 +128,9 @@
     <value>По его завершению возможны новые углубленные курсы на русском и английском.
                         В планах - оставить базовый курс в свободном доступе.</value>
   </data>
+  <data name="Community" xml:space="preserve">
+    <value>Группа</value>
+  </data>
   <data name="Details" xml:space="preserve">
     <value>Подробнее</value>
   </data>
@@ -136,5 +139,8 @@
   </data>
   <data name="OurCourses" xml:space="preserve">
     <value>Наши Курсы</value>
+  </data>
+  <data name="Progress" xml:space="preserve">
+    <value>Мы Растем</value>
   </data>
 </root>
