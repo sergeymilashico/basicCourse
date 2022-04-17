@@ -101,6 +101,36 @@ namespace Trainings.Web.Services
                 HomeworkLink = ""
             });
 
+            result.Add(new Lesson
+            {
+                Id = 10,
+                Name = "ООП. Инкапсуляция",
+                Description = "ООП. Инкапсуляция",
+                CodeLink = "",
+                VideoLink = "https://www.youtube.com/embed/8-vUcb0b7Hc",
+                HomeworkLink = ""
+            });
+
+            result.Add(new Lesson
+            {
+                Id = 11,
+                Name = "ООП. Наследование",
+                Description = "ООП. Наследование",
+                CodeLink = "",
+                VideoLink = "https://www.youtube.com/embed/F6FI1ZeRv_s",
+                HomeworkLink = ""
+            });
+
+            result.Add(new Lesson
+            {
+                Id = 12,
+                Name = "ООП. Полиморфизм",
+                Description = "ООП. Полиморфизм",
+                CodeLink = "",
+                VideoLink = "https://www.youtube.com/embed/cEPrxbyodA0",
+                HomeworkLink = ""
+            });
+
             return result;
         }
 

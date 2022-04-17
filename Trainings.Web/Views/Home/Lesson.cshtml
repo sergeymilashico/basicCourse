@@ -65,7 +65,7 @@
                 <div class="tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade shadow rounded bg-white show active p-5" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                         <h4 class="font-italic mb-4">@Localizer["Homework"]</h4>
-                        <p class="font-italic text-muted mb-2">
+                        <p class="font-italic text-muted mb-2" id="homeworkContent">
                             @if (@Model.Current.HomeworkLink != null)
                             {
                                 <a href="@Model.Current.HomeworkLink" class="btn btn-primary">@Localizer["Open"]</a>
@@ -147,6 +147,12 @@
         {
             activateTab();
         });
+
+        var fullUrl = window.location.protocol + "//" + window.location.host + "/materials/homework/" + " #lesson" + @Model.Current.Id + "Content";
+        //alert(fullUrl);
+        $("#homeworkContent").load(fullUrl);
+        //$("#homeworkContent").load("https://localhost:7234/materials/homework #lesson1Content");
+        
         //activateTab('#v-pills-home-tab');
     });
 
