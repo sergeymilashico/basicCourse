@@ -143,4 +143,7 @@
   <data name="Progress" xml:space="preserve">
     <value>Мы Растем</value>
   </data>
+  <data name="Russian" xml:space="preserve">
+    <value>На русском</value>
+  </data>
 </root>

@@ -141,4 +141,7 @@
   <data name="Progress" xml:space="preserve">
     <value>Growth</value>
   </data>
+  <data name="Russian" xml:space="preserve">
+    <value>Russian</value>
+  </data>
 </root>
