@@ -6,36 +6,29 @@
 </h1>
 <hr class="shine">
 
+<!-- Prefixfree -->
+@*<script src="http://thecodeplayer.com/uploads/js/prefixfree-1.0.7.js" type="text/javascript" type="text/javascript"></script>*@
+
 <div class="container">
     <div class="row">  
-    <div class="col-lg-12 col-sm-12 col-md-12">
-        <div>
-            <div class="container d-flex justify-content-center">
-                <ul class="pagination shadow-lg">
-                    @foreach(Lesson lesson in @Model.Lessons)
-                    {
-                        if(@lesson.Id != @Model.Current.Id)
-                        {
-                            <li class="page-item">
-                                <a class="page-link" asp-area="" asp-controller="Home" asp-action="Lesson" asp-route-id="@lesson.Id">
-                                    <i class="fa fa-file mr-1"></i>
-                                    <small>@lesson.Id</small>
-                                </a>
-                                </li>
-                            }
-                            else
-                            {
-                                <li class="page-item active">
-                                <a class="page-link" asp-area="" asp-controller="Home" asp-action="Lesson" asp-route-id="@lesson.Id">
-                                    <i class="fa fa-file mr-1"></i>
-                                    <small>@lesson.Id</small>
-                                </a>
-                                </li>
-                            }    
-                        }
-                </ul>
+        <div class="breadcrumb col-lg-12 col-sm-12 col-md-12">
+        @foreach(Lesson lesson in @Model.Lessons)
+        {
+            if(@lesson.Id != @Model.Current.Id)
+            {
+                <a asp-area="" asp-controller="Home" asp-action="Lesson" asp-route-id="@lesson.Id">
+                    <small>@Localizer["Lesson"]</small>
+                </a>
+            }
+            else
+            {
+                <a class="active" asp-area="" asp-controller="Home" asp-action="Lesson" asp-route-id="@lesson.Id">
+                    <small>@Localizer["Lesson"]</small>
+                </a>
+            }    
+        }
         </div>
-</div>          
+    </div>        
 
 <div class="row">
             <div class="col-md-3" id="tabsContainer">
@@ -66,15 +59,8 @@
                     <div class="tab-pane fade shadow rounded bg-white show active p-5" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                         <h4 class="font-italic mb-4">@Localizer["Homework"]</h4>
                         <p class="font-italic text-muted mb-2" id="homeworkContent">
-                            @if (@Model.Current.HomeworkLink != null)
-                            {
-                                <a href="@Model.Current.HomeworkLink" class="btn btn-primary">@Localizer["Open"]</a>
-                            }
-                            else
-                            {
-                                <img src="~/assets/img/under development.png" />
-                            }
-                            </p>
+                            
+                        </p>
                     </div>
                     
                     <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-presentation" role="tabpanel" aria-labelledby="v-pills-presentation-tab">
@@ -94,9 +80,12 @@
                     <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-code" role="tabpanel" aria-labelledby="v-pills-code-tab">
                         <h4 class="font-italic mb-4">@Localizer["Code"]</h4>
                         <p class="font-italic text-muted mb-2">
-                            @if (@Model.Current.CodeLink != null)
+                            @if (@Model.Current.CodeLinks != null)
                             {
-                                <a href="@Model.Current.CodeLink" class="btn btn-primary">@Localizer["Open"]</a>
+                                @foreach (string link in @Model.Current.CodeLinks)
+                                {
+                                    <a href="@link" class="btn btn-primary">@Localizer["Open"]</a>
+                                }                        
                             }
                             else
                             {
@@ -122,18 +111,23 @@
             </div>
 </div>
 
+@foreach (string link in @Model.Current.VideoLinks)
+{
 <div class="row">  
     <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12 ratio ratio-4x3">
         <div class="container d-flex justify-content-center">
             <div class="embed-responsive embed-responsive-4by3 ratio ratio-4x3">
                 <br />
-                <iframe class="embed-responsive-item" src="@Model.Current.VideoLink" frameborder="0" allowfullscreen
+                <iframe class="embed-responsive-item" src="@link" frameborder="0" allowfullscreen
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" >
                 </iframe>
             </div>
         </div>
     </div>
 </div>
+} 
+
+
 </div>
 
 @section scripts {
