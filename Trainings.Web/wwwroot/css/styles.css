@@ -89,7 +89,7 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-hr {
+/*hr {
   margin: 1rem 0;
   color: inherit;
   background-color: currentColor;
@@ -99,7 +99,7 @@ hr {
 
 hr:not([size]) {
   height: 0.125rem;
-}
+}*/
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
@@ -11298,16 +11298,16 @@ html {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 2rem 0;
 }
 .page-section .page-section-heading {
-  font-size: 2.25rem;
-  line-height: 2rem;
+  font-size: 1.25rem;
+  line-height: 1rem;
 }
 @media (min-width: 992px) {
   .page-section .page-section-heading {
-    font-size: 3rem;
-    line-height: 2.5rem;
+    font-size: 2rem;
+    line-height: 1.5rem;
   }
 }
 

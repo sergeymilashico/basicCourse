@@ -15,28 +15,21 @@
     var returnUrl = string.IsNullOrEmpty(Context.Request.Path) ? "~/" : $"~{Context.Request.Path.Value}";
 }
 
-    @*<div class="flag flag-us"></div>
-    <select class="selectpicker" data-width="fit">
-        <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
-        <option  data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Español</option>
-    </select>
-    <select class="selectpicker" data-width="fit">
-        <option data-content='<i class="fa-solid fa-flag-usa"></i>'>English</option>
-        <option  data-content='<i class="fa-solid fa-flag-russian"></i>'>Russian</option>
-    </select>*@
-
-    <a class="nav-link py-3 px-0 px-lg-3 rounded dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        @requestCulture.TwoLetterISOLanguageName
-    </a>
+<a class="nav-link py-3 px-0 px-lg-3 rounded dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    @if (requestCulture.TwoLetterISOLanguageName == "ru") { <span class="flag-icon flag-icon-ua" /> }
+    @if (requestCulture.TwoLetterISOLanguageName == "en") { <span class="flag-icon flag-icon-us" /> }
+</a>
    
-    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-        @for(var i = 0; i < cultureItems.Count; i++)
-        {
-            if (@cultureItems[i].Value == requestCulture.Name) continue;
-            <li>
-                <a class="dropdown-item" asp-controller="Home" asp-action="SetLanguage" asp-route-returnUrl="@returnUrl" asp-route-culture="@cultureItems[i].Value">
-                    @cultureItems[i].Text
-                </a>
-            </li>
-        }
-    </ul>   
+<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+    @for(var i = 0; i < cultureItems.Count; i++)
+    {
+        if (@cultureItems[i].Value == requestCulture.Name) continue;
+            
+        <li>
+            <a class="dropdown-item" asp-controller="Home" asp-action="SetLanguage" asp-route-returnUrl="@returnUrl" asp-route-culture="@cultureItems[i].Value">
+                @if (@cultureItems[i].Text == "ru") { <span class="flag-icon flag-icon-ua" /> }
+                @if (@cultureItems[i].Text == "en") { <span class="flag-icon flag-icon-us" /> }
+            </a>
+        </li>
+    }
+</ul>   

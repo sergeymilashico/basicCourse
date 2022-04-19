@@ -126,7 +126,22 @@
   <data name="Brief2" xml:space="preserve">
     <value>After trial course completion please keep tuned to new more indepth courses on our site</value>
   </data>
+  <data name="Community" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>More</value>
+  </data>
+  <data name="Join" xml:space="preserve">
+    <value>Join</value>
+  </data>
   <data name="OurCourses" xml:space="preserve">
     <value>Our Courses</value>
+  </data>
+  <data name="Progress" xml:space="preserve">
+    <value>Growth</value>
+  </data>
+  <data name="Russian" xml:space="preserve">
+    <value>Russian</value>
   </data>
 </root>
